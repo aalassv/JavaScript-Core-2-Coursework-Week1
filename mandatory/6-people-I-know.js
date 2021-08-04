@@ -12,7 +12,7 @@ When you've finished. Continue to the exercises below.
 
 const friends = [
   {
-    age: 39,
+    age: 35,
     company: "PEARLESSA",
     name: {
       first: "Vilma",
@@ -382,7 +382,8 @@ First, I want you to find all of my friends who are 35 or older.
 
 */
 
-let thirtyFiveOrOlder = [];
+let thirtyFiveOrOlder = friends.filter(friend => friend.age >= 35);
+
 
 /*
 3) Find the email address
@@ -391,7 +392,7 @@ Next, I want you to find all of my friends who work for "POWERNET" and then stor
 
 */
 
-let powerNetEmails = [];
+let powerNetEmails = ;
 
 /*
 

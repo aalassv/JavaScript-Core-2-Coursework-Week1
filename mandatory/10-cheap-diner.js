@@ -30,6 +30,7 @@ Should give the answer "Nothing :("
 **/
 
 function chooseMeal(mealArray) {
+    for (let i = 0; i <)
 }
 
 /* ======= TESTS - DO MODIFY (!!!) =====
