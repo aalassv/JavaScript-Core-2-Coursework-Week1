@@ -21,21 +21,30 @@ You have to implement the missing features according to the specification.
 
 // Here is your starting point:
 let bottle = {
-  volume: 0,
+  volume: 10,
   fillUp: function () {
     // calling this function should completely fill your bottle (volume = 100);
+    this.volume === 0
+      ? (this.volume = 100)
+      : console.log(`You cannot exceed the bottle capacity`);
   },
   pour: function () {
     // calling this function should increase your bottle volume by 10 units;
+    this.volume <= 90 ? (this.volume += 10) : console.log(`the bottle is full`);
   },
   drink: function () {
     // calling this function should decrease your bottle volume by 10 units;
+    this.volume >= 10
+      ? (this.volume -= 10)
+      : console.log(`the bottle is empty`);
   },
   isFull: function () {
     // this function should return true if your bottle is full;
+    this.volume > 0 ? true : false;
   },
   isEmpty: function () {
     // this function should return true if your bottle is empty;
+    this.volume === 0 ? true : false;
   },
 };
 
