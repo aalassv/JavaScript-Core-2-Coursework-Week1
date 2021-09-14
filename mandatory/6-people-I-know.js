@@ -407,11 +407,33 @@ This time, I only want the full names ("<firstname> <lastname>") of my friends w
 
 */
 
-
+/*
 let friendsWhoAreColleaguesOfStacie = friends
-  .filter((entry) => entry.colleagues[0].name === "Stacie Villarreal")
+  .filter(  (entry) => entry.colleagues[0].name === "Stacie Villarreal")
   .map((friendsnames) => `${friendsnames.name.first} ${friendsnames.name.last}`
-  );;
+  );
+*/
+  let friendsWhoAreColleaguesOfStacie = friends
+    .filter(
+      (entry) =>
+        entry.colleagues[0].name === "Stacie Villarreal" ||
+        entry.colleagues[2].name === "Stacie Villarreal"
+    )
+    .map(
+      (friendsnames) => `${friendsnames.name.first} ${friendsnames.name.last}`
+    );
+  
+
+    /*
+      const friendsOfStacy = [];
+  friends.forEach((friend) => {
+    const colleagueNames = friend.colleagues.map((colleague) => colleague.name);
+    if (colleagueNames.includes("Stacie Villarreal")) {
+      friendsOfStacy.push(`${friend.name.first} ${friend.name.last}`);
+    }
+  });
+    */
+
 /*
 
 5) Find "Multi-tasking" colleagues
@@ -425,6 +447,13 @@ This time, I only want the full names of the people who can multitask
 */
 
 let colleaguesWhoCanMultitask = [];
+friends.forEach((friend) => {
+  const colleagueSkills = friend.colleagues.map((colleague) => colleague.skills);
+  if (colleagueSkills.includes("Multi-tasking")) {
+    colleaguesWhoCanMultitask.push(`${}`);
+  }
+});
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 - To run the tests for this exercise, run `npm test -- --testPathPattern 6-people-I-know.js`

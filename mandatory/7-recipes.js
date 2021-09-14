@@ -23,6 +23,34 @@ cocoa
 You should write and log at least 5 recipes
 
 **/
+let pupusas = {
+  title: "Pupusas",
+  Serves: 5,
+  Ingredients: ["Corn flour", "Mozzarella Cheese", "Kidney Beans"],
+};
 
-let recipes = {};
+let carneAsada = {
+  title: "Carne Asada",
+  Serves: 2,
+  Ingredients: ["2 pounds of Beef Meet", "Tomato", "Onion", "Pepper"],
+};
+
+let atolDeElote = {
+  title: "Atol de Elote ",
+  Serves: 1,
+  Ingredients: ["Fresh Corn grain", "Sugar", "Milk"],
+};
+
+let carneDeshilada = {
+  title: "Carne Deshilada",
+  Serves: 2,
+  Ingredients: ["2 pounds of Beef Meet", "Onion", "Garlic", "Cummin"],
+};
+
+let atolDeMaranon = {
+  title: "Atol de Maranon ",
+  Serves: 1,
+  Ingredients: ["Fresh Walnuts grain", "Sugar", "Milk"],
+};
+
 
